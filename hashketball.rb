@@ -132,10 +132,11 @@ end
 def player_numbers(team)
   game_hash.collect {
     |location, team_info|
-    team_info.select {
+    tst = team_info.select {
       |info_tag, info_real|
       info_tag == team
     }
+    binding.pry
   }.flatten
 end
 
