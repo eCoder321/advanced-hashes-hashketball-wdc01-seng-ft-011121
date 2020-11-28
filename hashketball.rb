@@ -129,6 +129,13 @@ end
 
 # Write code here
 
+def player_stats(player)
+  
+end
+
+
+
+
 def player_numbers(team)
   game_hash.collect {
     |location, team_info|
@@ -140,20 +147,23 @@ def player_numbers(team)
     end
   }.flatten.compact
 end
-
-def shoe_size(player)
+def player_here(player)
   game_hash.select {
     |i, a|
     game_hash[i][:players].select {
       |b|
       points = b.select {
         |c, d|
-        return b[:shoe] if d == player
+        return b if d == player
       }
       #binding.pry
     }
   }
 end
+player_here("Jeff Adrien")
+#def shoe_size(player)
+  
+#end
 
 def team_names
   game_hash.collect {
