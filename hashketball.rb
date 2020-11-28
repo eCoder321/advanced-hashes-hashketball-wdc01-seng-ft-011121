@@ -130,20 +130,20 @@ end
 # Write code here
 
 def big_shoe_rebounds
-  biggest_shoe = {}
-  biggest_number = 0
+  #biggest_shoe = {}
+  #biggest_number = 0
   game_hash.map {
-    |location, team_info|
+    |location, team_info, biggest_shoe, biggest_number|
       game_hash[location][:players].map {
         |each_player|
-        each_player.select {
-        |player_info_tag, player_info_real, counter|
-        biggest_number = each_player[:shoe] if each_player[:shoe] > biggest_number
-        }
+        if each_player[:shoe] > biggest_number
+          biggest_number = each_player[:shoe] 
+          biggest_shoe = each_player[:player_name]
+        end
       }
-    }
-    binding.pry
-    player_here(biggest_shoe[:player_name])[:rebounds]
+      binding.pry
+        
+  }
 end
 
 
