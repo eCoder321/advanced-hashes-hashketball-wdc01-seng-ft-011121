@@ -130,7 +130,7 @@ end
 # Write code here
 
 def big_shoe_rebounds
-  biggest shoe = {}
+  biggest_shoe = {}
   biggest_number = 0
   game_hash.map {
     |location, team_info|
