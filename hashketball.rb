@@ -160,7 +160,7 @@ def player_here(player)
     }
   }
 end
-player_here("Jeff Adrien")
+p player_here("Jeff Adrien")
 #def shoe_size(player)
   
 #end
