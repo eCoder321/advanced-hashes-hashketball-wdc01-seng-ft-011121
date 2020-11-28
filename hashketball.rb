@@ -148,7 +148,7 @@ def big_shoe_rebounds
         end
       }
       #binding.pry 
-      return stats(biggest_shoe)[:rebounds]
+      return player_stats(biggest_shoe)[:rebounds]
   }
   #binding.pry
 end
