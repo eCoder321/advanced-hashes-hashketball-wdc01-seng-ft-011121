@@ -129,7 +129,7 @@ end
 
 # Write code here
 
-def player_with_longest_name(least_biggest_type = "", conditional_stat = :player_name)
+def player_with_longest_name(least_biggest_type = 0, conditional_stat = :player_name)
   winning_player = ""
   biggest_number = least_biggest_type
   game_hash.map {
