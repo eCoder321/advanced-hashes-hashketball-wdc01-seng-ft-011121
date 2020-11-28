@@ -130,13 +130,15 @@ end
 # Write code here
 
 def player_numbers(team)
-  game_hash.select {
+  game_hash.collect {
     |location, team_info|
-    #binding.pry
-    team_info.values.include? team
-  }
-  p desired_team
-  binding.pry
+    if team_info.values.include? team
+      game_hash[location][:players].collect {
+        |i|
+        i[:number]
+      }
+  }.flatten
+  #binding.pry
 end
 #binding.pry
 
