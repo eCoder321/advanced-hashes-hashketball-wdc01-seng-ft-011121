@@ -136,9 +136,9 @@ def player_numbers(team)
       |info_tag, info_real|
       game_hash[location][info_tag] == team
     }
-    binding.pry
   }.flatten
 end
+binding.pry
 
 def shoe_size(player)
   game_hash.select {
