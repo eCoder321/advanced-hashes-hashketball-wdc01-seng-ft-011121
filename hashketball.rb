@@ -137,8 +137,8 @@ def player_numbers(team)
         |i|
         i[:number]
       }
+    end
   }.flatten
-  #binding.pry
 end
 #binding.pry
 
