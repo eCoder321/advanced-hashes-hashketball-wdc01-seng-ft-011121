@@ -130,8 +130,10 @@ end
 # Write code here
 
 def player_with_most_x(least_biggest_type = 0, conditional_stat)
+  winning_player = ""
+  biggest_number = least_biggest_type
   game_hash.map {
-    |location, team_info, winning_player, biggest_number = least_biggest_type|
+    |location, team_info|
       game_hash[location][:players].map {
         |each_player|
         if each_player[conditional_stat] > biggest_number
