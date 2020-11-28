@@ -152,7 +152,7 @@ end
 p player_with_x(:shoe)
 
 def big_shoe_rebounds
-  player_with_x(:shoe)[:rebounds]
+  player_stats(player_with_x(:shoe))[:rebounds]
   #binding.pry
 end
 
