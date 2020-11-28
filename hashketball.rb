@@ -129,8 +129,10 @@ end
 
 # Write code here
 
-
-
+def most_points_scored
+  player_with_most_x(:points)
+end
+p most_points_scored
 
 
 
