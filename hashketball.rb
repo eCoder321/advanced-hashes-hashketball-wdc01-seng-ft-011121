@@ -129,6 +129,15 @@ end
 
 # Write code here
 
+def player_numbers(team)
+  games_hash.collect {
+    |location, team_info|
+    team_info.select {
+      |in
+    }
+  }.flatten
+end
+
 def shoe_size(player)
   game_hash.select {
     |i, a|
@@ -140,12 +149,6 @@ def shoe_size(player)
       }
       #binding.pry
     }
-  }
-end
-
-def player_numbers(team)
-  games_hash.collect {
-    
   }
 end
 
