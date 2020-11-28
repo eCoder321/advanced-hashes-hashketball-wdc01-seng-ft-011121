@@ -130,7 +130,7 @@ end
 # Write code here
 
 def player_stats(player)
-  
+  player_here(player)
 end
 
 
@@ -147,6 +147,8 @@ def player_numbers(team)
     end
   }.flatten.compact
 end
+
+
 def player_here(player)
   game_hash.select {
     |i, a|
@@ -180,15 +182,5 @@ def team_colors(team)
 end
 
 def num_points_scored(player)
-  game_hash.select {
-    |i, a|
-    game_hash[i][:players].select {
-      |b|
-      points = b.select {
-        |c, d|
-        return b[:points] if d == player
-      }
-      #binding.pry
-    }
-  }
+ player_here(player)[:points]
 end
