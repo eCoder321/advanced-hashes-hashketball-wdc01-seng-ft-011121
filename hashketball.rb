@@ -140,7 +140,7 @@ def player_numbers(team)
     end
   }.flatten
 end
-#binding.pry
+binding.pry
 
 def shoe_size(player)
   game_hash.select {
