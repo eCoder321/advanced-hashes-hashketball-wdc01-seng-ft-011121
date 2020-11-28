@@ -133,7 +133,7 @@ def big_shoe_rebounds
  # biggest_shoe = {}
   biggest_number = 0
   game_hash.map {
-    |location, team_info, biggest_shoe|
+    |location, team_info, biggest_shoe, biggest_number|
       game_hash[location][:players].map {
         |each_player|
         if each_player[:shoe] > biggest_number
