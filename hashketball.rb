@@ -159,7 +159,7 @@ def player_numbers(team)
   game_hash.collect {
     |location, team_info|
     if team_info.values.include? team
-      tst = game_hash[location][:players].collect {
+      game_hash[location][:players].collect {
         |i|
         i[:number]
       }
