@@ -136,6 +136,7 @@ def player_numbers(team)
     team_info.values.include? team
   }
   p desired_team
+  binding.pry
 end
 #binding.pry
 
