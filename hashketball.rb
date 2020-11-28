@@ -152,7 +152,7 @@ def winning_team
     }
     winner
 end
-p winning_team
+#p winning_team
 """PLS COME BACKand figure out how to use player_numbers and num_points_scored to solve this problem"""
 
 
@@ -262,4 +262,6 @@ def long_name_steals_a_ton?
   condition = player_with_most_x(:steals)
   candidate == condition
 end
-p long_name_steals_a_ton?
+#p long_name_steals_a_ton?
+
+p player_with_most_x(:steals)
