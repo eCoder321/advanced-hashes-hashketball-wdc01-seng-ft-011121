@@ -136,21 +136,22 @@ end
 
 
 
-def player_with_x(least_biggest_type, conditional_stat, )
-
-def big_shoe_rebounds
+def player_with_x(least_biggest_type = 0, conditional_stat)
   game_hash.map {
-    |location, team_info, biggest_shoe, biggest_number = 0|
+    |location, team_info, winning_player, biggest_number = least_biggest_type|
       game_hash[location][:players].map {
         |each_player|
-        if each_player[:shoe] > biggest_number
-          biggest_number = each_player[:shoe] 
-          biggest_shoe = each_player[:player_name]
+        if each_player[conditional_stat] > biggest_number
+          biggest_number = each_player[conditional_stat] 
+          winning_player = each_player[:player_name]
         end
       }
-      #binding.pry 
-      return player_stats(biggest_shoe)[:rebounds]
+      return winning_player
   }
+end
+
+def big_shoe_rebounds
+  player_with_x(:shoe)[:rebouds]
   #binding.pry
 end
 
