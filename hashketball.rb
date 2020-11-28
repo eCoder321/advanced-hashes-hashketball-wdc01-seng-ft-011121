@@ -151,7 +151,7 @@ def player_with_x(least_biggest_type = 0, conditional_stat)
 end
 
 def big_shoe_rebounds
-  player_with_x(:shoe)[:rebouds]
+  player_with_x(:shoe)[:rebounds]
   #binding.pry
 end
 
