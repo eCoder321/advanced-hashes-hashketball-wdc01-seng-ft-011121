@@ -130,7 +130,7 @@ end
 # Write code here
 
 def player_numbers(team)
-  game_hash.collect {
+  game_hash.select {
     |location, team_info|
     tst = team_info.select {
       |info_tag, info_real|
