@@ -149,6 +149,7 @@ def player_with_x(least_biggest_type = 0, conditional_stat)
       return winning_player
   }
 end
+p player_with_x(:shoe)
 
 def big_shoe_rebounds
   player_with_x(:shoe)[:rebounds]
