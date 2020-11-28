@@ -129,8 +129,16 @@ end
 
 # Write code here
 
-
-
+def winning_team
+  game_hash.map {
+    winning_score = 0 
+    winner = ""
+    |location, team_info, count|
+      game_hash[location][:players].map {
+        |each_player|
+        each_player[:points]
+end
+"""PLS COME BACKand figure out how to use player_numbers and num_points_scored to solve this problem"""
 
 
 
