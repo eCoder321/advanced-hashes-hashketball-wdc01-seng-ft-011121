@@ -132,11 +132,8 @@ end
 def player_numbers(team)
   game_hash.select {
     |location, team_info|
-    tst = team_info.select {
-      |info_tag, info_real|
-      game_hash[location][info_tag] == team
-    }
-  }.flatten
+    team_info.include? team
+  }
 end
 binding.pry
 
