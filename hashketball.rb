@@ -147,14 +147,15 @@ def player_with_most_x(least_biggest_type = 0, conditional_stat)
 end
 #p player_with_most_x(:shoe)
 
+def player_with_longest_name
+  player_with_most_x(:player_name)
+end
+
+
 def most_points_scored
   player_with_most_x(:points)
 end
-
-p most_points_scored
-
-
-
+#p most_points_scored
 
 def big_shoe_rebounds
   player_stats(player_with_most_x(:shoe))[:rebounds]
