@@ -133,7 +133,7 @@ def player_numbers(team)
   game_hash.select {
     |location, team_info|
     binding.pry
-    team_info.include? team
+    team_info.values.include? team
   }
 end
 #binding.pry
