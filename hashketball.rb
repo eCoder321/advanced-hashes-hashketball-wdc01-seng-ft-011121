@@ -129,12 +129,30 @@ end
 
 # Write code here
 
-def player_stats(player)
-  player_here(player)
+def big_shoe_rebounds
+  biggest shoe = {}
+  biggest_number = 0
+  game_hash.map {
+    |location, team_info|
+      game_hash[location][:players].map {
+        |each_player|
+        each_player.select {
+        |player_info_tag, player_info_real, counter|
+        each_player[:shoe]
+        }
+      }
+    }
+  }
 end
 
 
 
+
+
+
+def player_stats(player)
+  player_here(player)
+end
 
 def player_numbers(team)
   game_hash.collect {
