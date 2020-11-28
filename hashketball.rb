@@ -260,6 +260,9 @@ end
 def long_name_steals_a_ton?
   candidate = player_with_longest_name
   condition = player_with_most_x(:steals)
-  "#{true}, #{condition} had the most steals" if candidate == condition
+  "#{true}, #{condition} had the most steals :)" if candidate == condition
 end
 p long_name_steals_a_ton?
+
+
+p "HALLELUJAY!"
