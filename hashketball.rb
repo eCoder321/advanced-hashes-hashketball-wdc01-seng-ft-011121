@@ -262,4 +262,4 @@ def long_name_steals_a_ton?
   condition = player_with_most_x(:steals)
   candidate == condition
 end
-p long_name_steals_a_ton
+p long_name_steals_a_ton?
