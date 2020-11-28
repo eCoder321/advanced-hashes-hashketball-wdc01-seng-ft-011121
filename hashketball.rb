@@ -140,8 +140,8 @@ def player_with_most_x(least_biggest_type = 0, conditional_stat)
         end
         binding.pry
       }
-      return winning_player
   }
+  winning_player
 end
 #p player_with_most_x(:shoe)
 
