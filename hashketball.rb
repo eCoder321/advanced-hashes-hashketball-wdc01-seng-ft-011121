@@ -160,10 +160,10 @@ def player_here(player)
     }
   }
 end
-p player_here("Jeff Adrien")
-#def shoe_size(player)
-  
-#end
+
+def shoe_size(player)
+  player_here(player)[:shoe]
+end
 
 def team_names
   game_hash.collect {
