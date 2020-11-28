@@ -137,7 +137,6 @@ def player_numbers(team)
         |i|
         i[:number]
       }
-      binding.pry
     end
   }.flatten
 end
