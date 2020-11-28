@@ -134,8 +134,9 @@ def player_numbers(team)
     |location, team_info|
     team_info.include? team
   }
+  .pry
 end
-binding.pry
+#binding.pry
 
 def shoe_size(player)
   game_hash.select {
