@@ -148,8 +148,9 @@ end
 #p player_with_most_x(:shoe)
 
 def player_with_longest_name
-  player_with_most_x(:player_name)
+  player_with_most_x("", :player_name)
 end
+p player_with_longest_name
 
 
 def most_points_scored
