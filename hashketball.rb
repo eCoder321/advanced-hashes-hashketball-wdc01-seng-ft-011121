@@ -141,6 +141,7 @@ def winning_team
       if count > winning_score
         winning_score = count 
         winner = "#{game_hash[location][:team_name]} is the winner!"
+      end
     }
     winner
 end
