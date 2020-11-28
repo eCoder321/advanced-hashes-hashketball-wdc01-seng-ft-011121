@@ -130,8 +130,8 @@ end
 # Write code here
 
 def big_shoe_rebounds
- # biggest_shoe = {}
-  biggest_number = 0
+ #biggest_shoe = {}
+  #biggest_number = 0
   game_hash.map {
     |location, team_info, biggest_shoe, biggest_number = 0|
       game_hash[location][:players].map {
@@ -141,7 +141,8 @@ def big_shoe_rebounds
           biggest_shoe = each_player[:player_name]
         end
       }
-      binding.pry  
+      binding.pry 
+      return player_here(biggest_shoe)[:rebounds]
   }
   #binding.pry
 end
