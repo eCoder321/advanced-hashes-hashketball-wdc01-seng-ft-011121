@@ -129,11 +129,7 @@ end
 
 # Write code here
 
-def long_name_steals_a_ton?
-  candidate = player_with_longest_name
-  condition = player_with_most_x(:steals)
-  candidate == condition
-end
+
 
 
 
@@ -260,3 +256,10 @@ end
 def num_points_scored(player)
  player_here(player)[:points]
 end
+
+def long_name_steals_a_ton?
+  candidate = player_with_longest_name
+  condition = player_with_most_x(:steals)
+  candidate == condition
+end
+p long_name_steals_a_ton
