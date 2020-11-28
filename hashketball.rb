@@ -138,7 +138,7 @@ def player_numbers(team)
         i[:number]
       }
     end
-  }.flatten
+  }
 end
 
 def shoe_size(player)
