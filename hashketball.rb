@@ -130,7 +130,20 @@ end
 # Write code here
 
 def player_with_longest_name
-  
+  winning_player = ""
+  biggest_number = least_biggest_type
+  game_hash.map {
+    |location, team_info|
+      game_hash[location][:players].map {
+        |each_player|
+        if each_player[conditional_stat].length > biggest_number.length
+          biggest_number = each_player[conditional_stat].length
+          winning_player = each_player[:player_name]
+        end
+        #binding.pry
+      }
+  }
+  winning_player
 end
 p player_with_longest_name
 
