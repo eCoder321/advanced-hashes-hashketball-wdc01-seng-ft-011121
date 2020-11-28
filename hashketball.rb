@@ -138,9 +138,15 @@ def winning_team
         |each_player|
         count += each_player[:points]
       }
-      winning_score = coun
+      if count > winning_score
+        winning_score = count 
+        winner = "#{game_hash[location][:team_name]} is the winner!"
+    }
+    winner
 end
+p winning_team
 """PLS COME BACKand figure out how to use player_numbers and num_points_scored to solve this problem"""
+
 
 
 
