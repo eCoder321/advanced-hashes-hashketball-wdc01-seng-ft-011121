@@ -129,6 +129,14 @@ end
 
 # Write code here
 
+def player_with_longest_name
+  
+end
+p player_with_longest_name
+
+
+
+
 def player_with_most_x(least_biggest_type = 0, conditional_stat)
   winning_player = ""
   biggest_number = least_biggest_type
@@ -146,11 +154,6 @@ def player_with_most_x(least_biggest_type = 0, conditional_stat)
   winning_player
 end
 #p player_with_most_x(:shoe)
-
-def player_with_longest_name
-  player_with_most_x("", :player_name)
-end
-p player_with_longest_name
 
 
 def most_points_scored
