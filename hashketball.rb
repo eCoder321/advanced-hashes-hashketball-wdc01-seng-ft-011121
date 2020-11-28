@@ -141,8 +141,6 @@ def big_shoe_rebounds
           biggest_shoe = each_player[:player_name]
         end
       }
-      binding.pry
-      p biggest_shoe
   }
 end
 
