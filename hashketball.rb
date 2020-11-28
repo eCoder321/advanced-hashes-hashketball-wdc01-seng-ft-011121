@@ -133,14 +133,14 @@ def player_numbers(team)
   game_hash.collect {
     |location, team_info|
     if team_info.values.include? team
-      game_hash[location][:players].collect {
+      tst = game_hash[location][:players].collect {
         |i|
         i[:number]
       }
+      binding.pry
     end
   }.flatten
 end
-binding.pry
 
 def shoe_size(player)
   game_hash.select {
