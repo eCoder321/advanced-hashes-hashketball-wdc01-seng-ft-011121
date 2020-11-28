@@ -132,8 +132,9 @@ end
 def player_numbers(team)
   games_hash.collect {
     |location, team_info|
-    team_info.select {
-      |in
+    p team_info.select {
+      |info_tag, info_real|
+      info_tag == team
     }
   }.flatten
 end
