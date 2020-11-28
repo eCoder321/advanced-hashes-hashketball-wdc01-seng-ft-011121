@@ -140,7 +140,7 @@ def player_with_most_x(least_biggest_type = 0, conditional_stat)
           biggest_number = each_player[conditional_stat] 
           winning_player = each_player[:player_name]
         end
-        binding.pry
+        #binding.pry
       }
   }
   winning_player
