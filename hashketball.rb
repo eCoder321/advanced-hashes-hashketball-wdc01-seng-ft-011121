@@ -129,15 +129,6 @@ end
 
 # Write code here
 
-def most_points_scored
-  player_with_most_x(:points)
-end
-p most_points_scored
-
-
-
-
-
 def player_with_most_x(least_biggest_type = 0, conditional_stat)
   game_hash.map {
     |location, team_info, winning_player, biggest_number = least_biggest_type|
@@ -152,6 +143,14 @@ def player_with_most_x(least_biggest_type = 0, conditional_stat)
   }
 end
 #p player_with_most_x(:shoe)
+
+def most_points_scored
+  player_with_most_x(:points)
+end
+p most_points_scored
+
+
+
 
 def big_shoe_rebounds
   player_stats(player_with_most_x(:shoe))[:rebounds]
