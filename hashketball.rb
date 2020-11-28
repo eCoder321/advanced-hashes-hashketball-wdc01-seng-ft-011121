@@ -140,7 +140,7 @@ def big_shoe_rebounds
         |player_info_tag, player_info_real, counter|
         biggest_number = each_player[:shoe] if each_player[:shoe] > biggest_number
         }
-        return tst
+        binding.pry
       }
     }
 end
