@@ -133,7 +133,7 @@ def winning_team
   winning_score = 0 
   winner = ""
     game_hash.map {
-    |location, team_info, count|
+    |location, team_info, count = 0|
       game_hash[location][:players].map {
         |each_player|
         count += each_player[:points]
