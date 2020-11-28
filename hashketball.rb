@@ -136,10 +136,11 @@ def big_shoe_rebounds
     |location, team_info|
       game_hash[location][:players].map {
         |each_player|
-        each_player.select {
+        tst = each_player.select {
         |player_info_tag, player_info_real, counter|
-        each_player[:shoe]
+        biggest_number = each_player[:shoe] if each_player[:shoe] > biggest_number
         }
+        return tst
       }
     }
   }
